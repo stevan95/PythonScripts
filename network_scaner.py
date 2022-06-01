@@ -5,7 +5,7 @@ import optparse
 
 def get_arguments():
     parser = optparse.OptionParser()
-    parser.add_option("-t", "--target", help="Target IP/ IP range.")
+    parser.add_option("-t", "--target", dest="target", help="Target IP/ IP range.")
     options, arguments = parser.parse_args()
     return options
 
